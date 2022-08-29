@@ -27,6 +27,14 @@
       "description": "give your telegram user id here",
       "value": "1350564182"
     },
+    "DATABASE_URI": {
+      "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/nj-lJfkgb6w",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/nj-lJfkgb6w",
+      "required": false
+    },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
       "value": ""
