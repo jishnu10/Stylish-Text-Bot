@@ -2,3 +2,4 @@ tgcrypto
 pyrogram==1.2.9
 motor==2.5.1
 asyncio==3.4.3
+pymongo[srv]==3.12.3
