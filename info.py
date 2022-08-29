@@ -9,3 +9,9 @@ def is_enabled(value, default):
         return False
     else:
         return default
+
+# MongoDB information
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "tgmoviebot")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+
